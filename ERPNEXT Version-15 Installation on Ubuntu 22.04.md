@@ -1,41 +1,63 @@
 **Update Your Ubuntu Operating System:**   
-**Step-1  //Install GIT//**  
+**Step-1  Install GIT**  
+
 ```
 sudo apt-get install git
-``` 
+```
+ 
 **Step-2 //Install Python//**  
+
 ```
 sudo apt-get install python3-dev   
 ``` 
+
 **Step-3**   
+
 ```
 sudo apt-get install python3-setuptools python3-pip
 ``` 
+
 **Step-4 //Install Python Virtual Enviroment//**   
+
 ```
 sudo apt-get install virtualenv   
+```
 ```
 sudo apt install python3.10-venv   
 ```
  
 **Step-5 //Install Software Properties Common//**   
-```sudo apt-get install software-properties-common   
+
+```
+sudo apt-get install software-properties-common   
+```
  
 **Step-6 // Install MYSQL Server//**   
-```sudo apt install mariadb-server   
-```sudo mysql_secure_installation   
- 
+
+```
+sudo apt install mariadb-server   
+```
+```
+sudo mysql_secure_installation   
+``` 
+
 **Step-7 //Install Other Package//**   
+
+```
 sudo apt-get install libmysqlclient-dev   
+```
  
 **Step-8 // Setup the Server//**   
+
+```
 sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf   
- 
+```
+
 //--Empty or Clear Completly the CNF File and Copy the bellow Code and Paste it.....//   
 //Ctrl+s --- To Save file.   
 //Ctrl+x --- To Exit/Close the file.   
-=================================================
--------------------------------------------------
+
+
  
 [server]
 user = mysql
