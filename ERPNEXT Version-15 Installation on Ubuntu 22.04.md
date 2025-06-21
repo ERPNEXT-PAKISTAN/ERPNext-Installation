@@ -1,24 +1,24 @@
 **Update Your Ubuntu Operating System:**   
    
 **Step-1  //Install GIT//**  
-sudo apt-get install git
+```sudo apt-get install git
  
 **Step-2 //Install Python//**  
-sudo apt-get install python3-dev   
+```sudo apt-get install python3-dev   
  
 **Step-3**   
-sudo apt-get install python3-setuptools python3-pip
+```sudo apt-get install python3-setuptools python3-pip
  
 **Step-4 //Install Python Virtual Enviroment//**   
-sudo apt-get install virtualenv   
-sudo apt install python3.10-venv   
+```sudo apt-get install virtualenv   
+```sudo apt install python3.10-venv   
  
 **Step-5 //Install Software Properties Common//**   
-sudo apt-get install software-properties-common   
+```sudo apt-get install software-properties-common   
  
 **Step-6 // Install MYSQL Server//**   
-sudo apt install mariadb-server   
-sudo mysql_secure_installation   
+```sudo apt install mariadb-server   
+```sudo mysql_secure_installation   
  
 **Step-7 //Install Other Package//**   
 sudo apt-get install libmysqlclient-dev   
