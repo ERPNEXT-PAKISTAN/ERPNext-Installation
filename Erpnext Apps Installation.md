@@ -17,9 +17,7 @@ bench --site site1.local install-app print_designer
 bench get-app studio   
 bench --site site1.local install-app studio
 ```
-
 **OR**
-**Studio**
 ```
 bench get-app studio
 bench new-site studio.localhost --install-app studio
