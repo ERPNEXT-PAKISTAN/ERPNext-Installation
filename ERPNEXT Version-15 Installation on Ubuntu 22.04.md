@@ -46,7 +46,7 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
 
  
-[server]   
+**[server]**   
 user = mysql   
 pid-file = /run/mysqld/mysqld.pid   
 socket = /run/mysqld/mysqld.sock   
@@ -59,7 +59,7 @@ query_cache_size = 16M
 log_error = /var/log/mysql/error.log
  
     
-[mysqld]   
+**[mysqld]**   
 innodb-file-format=barracuda
 innodb-file-per-table=1   
 innodb-large-prefix=1   
@@ -68,43 +68,43 @@ character-set-server = utf8mb4
 collation-server = utf8mb4_unicode_ci   
     
  
-[mysql]   
+**[mysql]**   
 default-character-set = utf8mb4   
     
 -------------------------------------------------    
 
  
-Step-9 //Restart SQL//   
+**Step-9 Restart SQL**   
 sudo service mysql restart   
  
-Step-10 // Install Redis Server//   
+**Step-10 Install Redis Server**   
 sudo apt-get install redis-server   
  
-Step-11 // Install Curl//   
+**Step-11  Install Curl**   
 sudo apt install curl    
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash   
 source ~/.profile   
  
-Step-12   
-// Install Node//   
+**Step-12**   
+**Install Node**   
 nvm install 18   
 nvm install 20   
 nvm install 21   
  
-Step-13 // Install NPM//   
+**Step-13  Install NPM**   
 sudo apt-get install npm   
     
-Step-14 // Install Yarn//    
+**Step-14  Install Yarn**    
 sudo npm install -g yarn    
     
-Step-15 // Install PDF//    
+**Step-15  Install PDF**    
 sudo apt-get install xvfb libfontconfig wkhtmltopdf   
     
-Step-16 // Install Frappe-Bench//   
+**Step-16  Install Frappe-Bench**   
 sudo -H pip3 install frappe-bench    
 bench --version    
  
-Step-17 // Initialize/Install Frappe-Bench//    
+**Step-17  Initialize/Install Frappe-Bench**    
  
 bench init frappe-bench --frappe-branch version-15    
 //---OR----//    
@@ -114,26 +114,25 @@ bench init frappe-bench
 cd frappe-bench/    
 bench start    
  
-Step-18 // create a site in frappe bench//    
+**Step-18  create a site in frappe bench**    
 bench new-site site1.local    
 bench use site1.local    
  
-Step-19 //Install Payment Module//    
+**Step-19 Install Payment Module**    
 bench get-app payments    
 bench --site site1.local install-app payments    
     
-Step-20 //Download ERPNExt//    
+**Step-20 //Download ERPNExt**    
 bench get-app erpnext --branch version-15    
 //---OR----//    
 bench get-app https://github.com/frappe/erpnext --branch version-15    
      
-Step-21 //Install ERPNExt//      
+**Step-21 Install ERPNExt**      
 bench --site site1.local install-app erpnext    
     
-Step-22 //BENCH START//    
+Step-22 BENCH START**    
 bench start      
--------------------------------------------------    
--------------------------------------------------   
+-------------------------------------------------      
   
 INSTALL HRMS    
 -------------
