@@ -39,8 +39,14 @@ bench --site site1.local install-app builder
 bench get-app hrms --branch version-15  
 bench --site site1.local install-app hrms  
 ```
- 
-**Install Payment Module**   
+
+**LOAN / LENDING**
+```
+bench get-app lending
+bench --site site1.local install-app lending
+```
+ 
+**Payment Module**   
 ```
 bench get-app payments   
 bench --site site1.local install-app payments   
@@ -51,4 +57,3 @@ bench --site site1.local install-app payments
 bench get-app chat    
 bench --site site1.local install-app chat   
 ```
-``
