@@ -1,8 +1,8 @@
 **Insights Insallation**   
 
 ```
-bench get-app insights //*For Latest Version
-Or
+bench get-app insights //**For Latest Version**
+OR
 bench get-app insights --branch version-3
 bench --site site1.local install-app insights
 ````
